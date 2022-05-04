@@ -15,6 +15,7 @@ Architectural overview
 
 Data 	Scraping
 The fundamental part of any machine learning workflow is data. Collecting good data sets has a huge impact on the quality and performance of the ML model. We need to write a web-scraping script that gathers the news from the online newspaper, gets into their link and scrapes the news body paragraphs continuously.
+
 Data 	extraction and cleaning
 We select and integrate the relevant data from various data sources for the ML task
 Text Cleaning
@@ -26,15 +27,22 @@ Punctuation signs: characters such as “?”,“!”,“;” must 	be removed.
 Possessive pronouns: in addition, we would expect that “Trump” and “Trump’s”  had the same predicting power.
 Stemming or Lemmatization : stemming is the process of 	 reducing derived words to their root. Lemmatization is the process of reducing a word to its lemma. The main difference between both methods is that lemmatization 	provides existing words, whereas stemming provides the root, which may not be an existing word
 Stop words: words such as “what” or “the” .For this reason, they may represent noise that can be eliminated. 
+
 Feature 	store
 After scraping data and some cleaning process, it will be saved in some data store like MongoDB i.e. Feature store. A feature store is a centralised repository where you standardise the definition, storage, and access of features for training and serving. A feature store needs to provide real-time serving for the feature values, and to support both training and serving workloads.
 With respect to this project we need to separate out labelled and unlabelled data in data store.
+
 ML 	Pipeline
+
 Data 				Preparation: The 				data is prepared for the ML task. We 				can use circular buffer to store data. The 				benefit of a circular buffer is, that you don't need 				infinite amounts of memory, since older entries get overridden 				automatically.This 				preparation involves data cleaning, where we will split the data 				into training, validation, and test sets. Also apply data 				transformations and feature engineering to the model that solves 				the target task. The output of this step are the data 				splits in 				the prepared format.
+
 Model 				training: The different algorithms with the prepared data to 				train various ML models. We 				want to build neural network architecture which is expected to be 				able to classify news topics based on its content. We will be 				building LSTM model, as it works well with sequential, text data.
+
 Model 				evaluation: The output of this step is a set of metrics to assess 				the quality of the model.
+
 Model 				validation: The model is confirmed to be adequate for 				deployment—that its predictive performance is better than a 				certain baseline.
 The output of ML pipeline is Trained model.
+
 Model 	deployment
 The validated model is deployed to a target environment to serve predictions. This deployment can be one of the following:
 Microservices 	with a REST API to serve online predictions.
