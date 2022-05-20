@@ -1,4 +1,3 @@
-
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -7,8 +6,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 import pymongo
-
-
 
 seed_urls = ['https://inshorts.com/en/read/technology',
              'https://inshorts.com/en/read/sports',
