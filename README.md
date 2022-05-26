@@ -52,3 +52,7 @@ Trigger
 To automate the ML production pipelines to retrain the models with new data, depending on the requirement:
 Here we want to retrain ML model on a schedule: New, labelled data is systematically available for the ML system on a daily, weekly, or monthly basis. The retraining frequency also depends on how frequently the data patterns change, and how expensive it is to retrain your models.
 
+Work Approach: 
+
+newspaper3k  allows us to find, extract, download, and parse articles from a potentially unlimited number of sources. Also, this works relatively seamlessly across multiple languages also. If that weren’t enough, newspaper is capable of caching articles, multi-threaded downloads, and basic NLP.
+In order to exemplify newspaper, I will collect three small corpora, each contianing articles from a specific category of news (i.e. education, politics, sports). I will then extract and summarize the keywords of these categories. Based on these keywords we should be able to clearly distinguish between the three categories and make an assumption about he underlying topic or category.
