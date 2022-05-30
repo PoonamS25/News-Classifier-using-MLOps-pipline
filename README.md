@@ -52,7 +52,9 @@ Trigger
 To automate the ML production pipelines to retrain the models with new data, depending on the requirement:
 Here we want to retrain ML model on a schedule: New, labelled data is systematically available for the ML system on a daily, weekly, or monthly basis. The retraining frequency also depends on how frequently the data patterns change, and how expensive it is to retrain your models.
 
-Work Approach: 
+Solution Approach: 
+
+For this project I need to web scrape a bunch of news articles online with 'BeautifulSoup', but I need to understand the unique html structures of each online news platform. Here, I did find a simple solution to my problems. I found Newspaper3k!
 
 newspaper3k  allows us to find, extract, download, and parse articles from a potentially unlimited number of sources. Also, this works relatively seamlessly across multiple languages also. If that weren’t enough, newspaper is capable of caching articles, multi-threaded downloads, and basic NLP.
 
