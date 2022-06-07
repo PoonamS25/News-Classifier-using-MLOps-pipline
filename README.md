@@ -58,5 +58,6 @@ For this project I need to web scrape a bunch of news articles online with 'Beau
 
 newspaper3k  allows us to find, extract, download, and parse articles from a potentially unlimited number of sources. Also, this works relatively seamlessly across multiple languages also. If that weren’t enough, newspaper is capable of caching articles, multi-threaded downloads, and basic NLP.
 
-
+Yesturday, I encountered ‘Topic Modelling’ to classify documents (unstructured data) into their category. Latent Dirichlet Allocation (LDA) algorithm has been mentioned in one blog to classify unstructred news.
+So, after collecting news articles text/description I am trying with LDA algorithm.
 
