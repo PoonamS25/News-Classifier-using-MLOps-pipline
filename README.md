@@ -61,3 +61,9 @@ newspaper3k  allows us to find, extract, download, and parse articles from a pot
 Yesturday, I encountered ‘Topic Modelling’ to classify documents (unstructured data) into their category in one of the blog. Latent Dirichlet Allocation (LDA) algorithm is one of the best approach to classify unstructred news.
 So, after collecting news article's text/description I am trying with LDA algorithm.
 
+LDA-NMF Combination Model
+
+Latent Dirichlet Allocation (LDA) is a classic solution to Topic-Modelling. But in practice, it gave huge proportion of wrong classifications. Hence, Non Negative Matrix Factorization (NMF) is also used and numerically combined with LDA, along with Multi Class Binarizer to refine the results.
+
+
+
