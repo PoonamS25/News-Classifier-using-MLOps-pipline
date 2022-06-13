@@ -65,5 +65,5 @@ LDA-NMF Combination Model
 
 Latent Dirichlet Allocation (LDA) is a classic solution to Topic-Modelling. But in practice, it gave huge proportion of wrong classifications. Hence, Non Negative Matrix Factorization (NMF) is also used and numerically combined with LDA, along with Multi Class Binarizer to refine the results.
 
-
+news_category.csv file has been used to save results, news text/description with dominant category.
 
