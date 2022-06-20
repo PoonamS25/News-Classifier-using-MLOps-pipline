@@ -131,9 +131,6 @@ print(final_df)
 #final_df.to_csv('my_scraped_articles.csv')
 
 
-
-
-
 df_clean = pd.DataFrame(final_df['Text'].apply(lambda x: clean_text(x)))
 df_clean = pd.concat([df_clean, final_df['ID']], axis=1)
 df_clean.to_csv('file.csv',index=False)
